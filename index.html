@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Spotify Web</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container_spotify">
 
             <!-- INIZIO ASIDE -->
             <aside>
@@ -68,12 +69,85 @@
 
                 <!-- INIZIO MAIN -->
                 <main>
-                    <div class="cards">
-
+                    <nav>
+                        <h3>IN EVIDENZA</h3>
+                        <h3>PODCAST</h3>
+                        <h3>CLASSIFICHE</h3>
+                        <h3>GENERI E MOOD</h3>
+                        <h3>NUOVE USCITE</h3>
+                        <h3>SCOPRI</h3>
+                    </nav>
+                    <div class="cards col-lg-12">
+                        <div class="titolo_card">
+                            <h2>Recently played</h2>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI2PtROIYUHY6dZPhha8rkcBgGRTqohg-Jrw&usqp=CAU" alt="">
+                            <h3>Heavy Metal</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRoDCwjzsfjynUcgV-Uq0BE0CkwaJRHXjFEhA&usqp=CAU" alt="">
+                            <h3>Stranger Things,Vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                            <p>Kyle Dixon & Michael Stein</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR8eXUTpo9gk4i2O53H0UlwvmnHQmZiQQmQFg&usqp=CAU" alt="">
+                            <h3>A quiet place</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive" src="https://www.what-song.com/images/posters/102065/Split-200.jpg" alt="">
+                            <h3>Split</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive" src="https://lipercubo.it/wp-content/uploads/2017/12/locandina.jpg" alt="">
+                            <h3>A cure for wellness</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHh9bYtyaaGicU4Gvdr90pNl57ofXuCH19Fg&usqp=CAU" alt="">
+                            <h3>Sinister</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="cards col-lg-12">
+                        <div class="titolo_card">
+                            <h2>Creato per John Doe</h2>
+                            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHtbJGI6zblyXFxMiGIT_EZbtibREHnE7mkQ&usqp=CAU" alt="">
+                            <h3>New music friday</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img src="https://pbs.twimg.com/media/DRaaso2XUAAyhwo.jpg" alt="">
+                            <h3>Alta rotazione</h3>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                    <div class="cards col-lg-12">
+                        <div class="titolo_card">
+                            <h2>Artisti più popolari</h2>
+                            <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class="responsive circle" src="https://i.scdn.co/image/ab67616d0000b273a69daf940429089524e93ceb" alt="">
+                            <h3>Pink Floyd</h3>
+                            <p>Subtitle</p>
+                        </div>
+                        <div class="card col-lg-2">
+                            <img class=" responsive circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4F1f6sK9aap75jnmBCKv7omL8w5wr2Jq1VFjPg5x5l5EjZ_9D&s" alt="">
+                            <h3>Modena City Ramblers</h3>
+                            <p>Subtitle</p>
+                        </div>
                     </div>
                 </main>
                 <!-- FINE MAIN -->
             </div>
+            <!-- INIZIO PLAYER -->
             <div class="player">
                 <div class="album_player">
                     <div class="logo_player">
@@ -83,10 +157,10 @@
                         <h4>Sinister</h4>
                         <p>Brano Nome</p>
                     </div>
-                </div>
-                <div class="icons">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
+                    <div class="icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
+                    </div>
                 </div>
                 <div class="play">
                     <div class="play_icons">
@@ -99,7 +173,7 @@
                     <div class="barra_play">
                         <p>0:25</p>
                         <div class="time_barra">
-                            <div class="barra_white"></div>
+                             <input type="range" min="1" max="100" value="30" class="slider" id="myRange">
                         </div>
                         <p>4:35</p>
                     </div>
@@ -109,10 +183,11 @@
                     <i class="fas fa-tv"></i>
                     <i class="fas fa-volume-up"></i>
                     <div class="time_barra_impostazione">
-                        <div class="barra_white_impostazioni"></div>
+                         <input type="range" min="1" max="100" value="20" class="slider" id="myRange">
                     </div>
                 </div>
             </div>
+            <!-- FINE PLAYER -->
         </div>
     </body>
 </html>
